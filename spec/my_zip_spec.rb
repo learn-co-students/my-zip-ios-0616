@@ -17,7 +17,7 @@ describe "#my_zip" do
 
   it "zips two arrays  of equal length together" do
     expect(evens.my_zip(odds)).to eq([[2, 7], [4, 9], [6, 11]])
-    expect(oods.my_zip(events)).to eq([[7, 2], [9, 4], [11, 6]])
+    expect(odds.my_zip(evens)).to eq([[7, 2], [9, 4], [11, 6]])
     expect(a.my_zip(b)).to eq([[4, 7], [5, 8], [6, 9]])
     expect(b.my_zip(a)).to eq([[7, 4], [8, 5], [9, 6]])
   end
